@@ -3,7 +3,7 @@ const rewire = require('rewire');
 
 var app = rewire('./app');
 
-describe('App', () => {
+describe('App with spies', () => {
     var db = {
         saveUser : expect.createSpy()
     }
